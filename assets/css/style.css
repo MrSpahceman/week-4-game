@@ -1,0 +1,22 @@
+.thumbnail img {
+    height:250px;
+    width:100%;
+}
+body {
+    background-color: pink;
+
+}
+
+
+/*@media screen and (max-width: 768px) {
+  body {
+    background-color: #333;
+
+  @media screen and (max-width: 320px) {
+  body {
+    background-color: #333;
+  }
+  @media screen and (max-width: 168px) {
+  body {
+    background-color: #333;
+  }*/
