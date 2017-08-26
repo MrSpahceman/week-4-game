@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- adding bootstrapcss -->
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <!-- making it responsive -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>CrystalCollector</title>
+
 </head>
 <body>
 
 <section>  
-<div class="container-fluid">
+<div class="container-fluid">  
 	<!-- building rows for the layout -->
 			<div class="row">
 					<!-- row1 has 1 col -->
@@ -33,27 +34,30 @@
 			</div>				
 		</div>
 
+<!-- row 3 has 2 columns -->
 		<div class="row">
-			<!-- row 3 has 2 columns -->
+			<!-- //This row is for number of wins/losses and random target number to guess -->
 			<div class="col-lg-6 d-block bg-primary">
-			<p> this sections is for showing wins/losses and random number<p>
+				<h1> Number to Guess <span id = "number-to-guess"></span></h1>
+				<h1>Number of WINS <span id = "number of Wins"></span> </h1>
+				<h1>Number of Losses <span id = "number of Losses"></span></h1>
 			</div>			
 		</div>
 		<!-- row 4 contains 4 columns for the images -->
 		<div class="row">
 		 	
 				<div class="col-lg-3">
-						<div class="thumbnail">
+						<div class="thumbnail1">
 	                         <img src="C:\Users\Carlos\Bootcamp\HomeWork\Week-4-game\week-4-game\assets\images\GreenRuby.jpg">
 	                    </div>
 	            </div>	
 					<div class="col-lg-3">
-						<div class="thumbnail">
-	                                 <img src="C:\Users\Carlos\Bootcamp\HomeWork\Week-4-game\week-4-game\assets\images\BlueRuby.jpg" >
+						<div class="thumbnail2">
+	                                 <img src= "C:\Users\Carlos\Bootcamp\HomeWork\Week-4-game\week-4-game\assets\images\BlueRuby.jpg">
 	                	</div>
 	                </div>
 						<div class="col-lg-3">			
-							<div class="thumbnail">
+							<div class="thumbnail3">
 	                               <img src="C:\Users\Carlos\Bootcamp\HomeWork\Week-4-game\week-4-game\assets\images\redruby.jpg" >
 	                		</div>
 	                	</div>
@@ -63,23 +67,24 @@
 		<!-- row 5 contains 1 column for displaying users score -->
 			<div class="row">
 				<div class="col-sm-6 d-line bg-success">
-				<p> this row is for displaying users score</p>
+				<h1> User Score <span id = "userScore"></span></h1>
 				</div>			
 			</div>
 		<!-- this 6 contains 1 column for displaying the value of ruby when selected -->
 		<div class="row">
 			<div class="col-sm-6 d-block bg-primary">
-			<p> this row is for displaying the value of the ruby when selected
+				<h1> Selected Ruby Value <span id = "rubyValue"></span></h1>
 			</div>
 		</div>
 </div>		
 		
 </section>
+<!-- adding jqery cdn -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- adding external game.js -->
 <script src ="C:\Users\Carlos\Bootcamp\HomeWork\Week-4-game\week-4-game\assets\javascript\game.js" type="text/javascript"></script>
 
-<!-- adding jqery cdn -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
  
 
 
