@@ -48,6 +48,11 @@ function winLoss(){
   }
 }
 
+//Display portions of code and user input events///////////////////////////////
+// random number to guess and to be displayed to the user to hit between 0 and 100  
+var targetNumber= Math.floor(Math.random() *100);
+$("#number-to-guess").text(targetNumber);
+
 //tyring to make each of my crystals have different random values; unable to add them all together.
 	$(".thumbnail1").on("click", function(userScore) {
 		alert("clicked")
@@ -66,28 +71,3 @@ function winLoss(){
 		 Math.floor(Math.random() * 30);
 		$("#userScore").text( Math.floor(Math.random() * 30));
 		});
-
-
-//Display portions of code and user input events
-// random number to guess and to be displayed to the user to hit between 0 and 100  
-var targetNumber= Math.floor(Math.random() *100);
-$("#number-to-guess").text(targetNumber);
-
-// I dont know the syntax for method to add a value to each thumbnail. I've tried to add all thumbnails 1,2,3. only thumbnail 1 worked
-
-
-// var PowerOptions = Math.floor(Math.random() * 30);
-// 	$(."thumbnail1").txt("#rubyValue")
-
-//I was able to get the code below to work for each individual image with the value of 1. 
-// $(".thumbnail1"  ).on("click", function(){
-// 	counter += 1
-// 	alert('yes' + counter );});
-// var counter =0;
-// $(".thumbnail2"  ).on("click", function(){
-// 	counter += 1
-// 	alert('yes' + counter );});
-// var counter =0;
-// $(".thumbnail3"  ).on("click", function(){
-// 	counter += 1
-// 	alert('yes' + counter );});
